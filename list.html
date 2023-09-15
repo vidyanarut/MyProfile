@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <style>
+     
+        .hobbies{
+             list-style-type:lower-alpha;  /* upper-roman; | lower-roman | lower-alpha | upper-alpha  */
+        }
+        #techStack{
+            list-style-type: circle;  /* circle | square  */
+        }
+        .uiBackendTechStack{
+            list-style-type: none;
+        }
+      
+        .mainItem::before{
+            content: "👉";
+        } 
+    </style>
+    
 </head>
 <body>
   <h1> 
     My City
   </h1> 
-  <ol>
+  <ol class="hobbies">
 <li> Satara   </li>
 <li> Pune   </li>
 <li> Sangola   </li>
@@ -20,7 +37,7 @@
   <h2>
     My Technologies
   </h2>
-  <ul>
+  <ul id="techStack">
     <li>Java</li>
     <li>Python</li>
     <li>html</li>
@@ -32,10 +49,10 @@
   <h2>
       My Technologies Stack
   </h2>
-  <ol>
-    <li>backend Technologies</li>
+  <ol class="uiBackendTechStack">
+    <li class="main">backend Technologies</li>
     <ul>
-        <li>java </li>
+        <li class="main">java </li>
         <ul>
             <li>hibernet</li>
             <li>spring</li>
@@ -44,7 +61,7 @@
         <li>python</li>
         <li><mark>c++</mark></li>
     </ul>
-    <li>Ui Technologies</li>
+    <li class="main">Ui Technologies</li>
     <ul>
         <li>java script</li>
         <li>html&Css</li>
@@ -52,7 +69,7 @@
         <li>react js</li>
     </ul>
 
-    <li>Database</li>
+    <li class="main">Database</li>
     <ol>
         <li>mysql</li>
         <li>sql</li>
